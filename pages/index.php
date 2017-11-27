@@ -80,13 +80,35 @@ require 'connection.php';
 		
 		<div class="container ">
 			
-			<div>
+		<div class="row" >
 				
-             <div class="col-md-6">
+             <div class="col-md-3">
+
              	
              	<!-- icon -->
 
-             	<a href="#"></a>
+             	<?php 
+                       $sql=$PDO->prepare("SELECT * FROM department");
+                       $sql->execute();
+                       foreach ($sql as $row) {
+                       	echo '
+
+                        <div class="panel panel-default  " >
+                         
+                         <div class="panel-body" >
+                          <a href=course.php?id='.$row['id'].'  >
+                          <div class="col-md-8">
+                          <img src='.$row['img'].' class="img-responsive img-rounded ">
+                          </div>
+                        '.$row['dep_name'].'</a>
+                         </div>
+                        </div>
+                       	';
+                       }
+
+                    	 ?>
+
+             	
              </div>
 
 			</div>
