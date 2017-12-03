@@ -26,6 +26,7 @@ $id=$_GET['id'];
 	<div >
 				<img src="log.png" style="width: 100%; height: 200px;">
 			</div>
+			<?php require "nav.php";?>
 	<div>
 		
 	</div>
