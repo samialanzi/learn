@@ -32,7 +32,7 @@ require 'connection.php';
 	<section>
 		
 		<div class="container ">
-			<div class="col-md-10">
+			<div class="col-md-10 col-md-offset-1">
 		<div class="row" >
 				
              
@@ -54,7 +54,16 @@ require 'connection.php';
                           <a href=course.php?id='.$row['id'].'  >
                           <div class="col-md-8">
                          
-                          </div>
+                          </div style="font-size: 30px; 
+
+    font-family: "Fjalla One", sans-serif;
+     font-family: "Abril Fatface", cursive;
+
+    font-family: "Oleo Script", cursive;
+
+    font-family: "Katibeh", cursive;
+
+">
                         '.$row['dep_name'].'</a>
                          </div>
                         </div>
@@ -71,8 +80,26 @@ require 'connection.php';
 		</div>
 	</section>
   
-<footer>
-	
+<footer class="footer">
+	<div class="text-center" style="font-size: 30px; 
+
+    font-family: 'Fjalla One', sans-serif;
+     font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Oleo Script', cursive;
+
+    font-family: 'Katibeh', cursive;
+
+">
+		
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h3>Sami.a.alanazi</h3>
+	<h4>201315053</h4>
+			</div>
+		</div>
+	</div>
+
 
 </footer>
 

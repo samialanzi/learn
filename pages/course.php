@@ -34,7 +34,16 @@ $id=$_GET['id'];
 		<a href="index.php"> <i class="glyphicon glyphicon-home"></i> </a>
 	</div>
 
-	<div class="col-md-6">
+	<div class="col-md-6" style="font-size: 30px; 
+
+    font-family: 'Fjalla One', sans-serif;
+     font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Oleo Script', cursive;
+
+    font-family: 'Katibeh', cursive;
+
+">
 		<?php 
  echo $name;
          

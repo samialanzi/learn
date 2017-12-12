@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" style="background: #0AA5D1; padding: 5px;">
+<nav class="navbar navbar-default" style=" padding: 5px; ">
 			<ul class="nav navbar-nav " style=" padding: 5px;">
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">اقسام المكتبة </a>
                     <ul class="dropdown-menu">
@@ -8,7 +8,7 @@
                        foreach ($sql as $row) {
                        	echo '
 
-                        <li><a href=course.php?id='.$row['id'].'>'.$row['dep_name'].'</li>
+                        <li "><a href=course.php?id='.$row['id'].'>'.$row['dep_name'].'</a></li>
                        	';
                        }
 
@@ -27,7 +27,7 @@
                        foreach ($sql as $row) {
                        	echo '
 
-                        <li><a href=course.php?id='.$row['id'].'>'.$row['tool_name'].'</a></li>
+                        <li><a href='.$row['path_tools'].'>'.$row['tool_name'].'</a></li>
                        	';
                        }
 
